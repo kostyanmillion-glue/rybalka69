@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>Юлия &amp; Владимир — приглашение</title>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Caveat:wght@400;600&amp;family=Great+Vibes&amp;family=Dancing+Script:wght@400;600&amp;family=Manrope:wght@300;400;500&amp;family=Comforter+Brush&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body class="intro-open">
+<!-- cinematic background -->
+<div aria-hidden="true" class="cin-bg"></div>
+<!-- illustration branches (subtle animation) -->
+<div aria-hidden="true" class="bg-branches"></div>
+<!-- Intro card (открытка) -->
+<div aria-hidden="false" class="intro" id="intro">
+<div aria-hidden="true" class="intro__veil"></div>
+<div aria-label="Свадебное приглашение" class="intro__card" role="dialog">
+<div class="intro__badge">Свадебное приглашение</div>
+<h1 class="intro__names">
+<span>Юлия</span>
+<span class="intro__amp">&amp;</span>
+<span>Владимир</span>
+</h1>
+<p class="intro__meta">01 августа 2026 • Екатеринбург</p>
+
+<div class="intro__field">
+  <label class="intro__label" for="guestName">Ваше имя</label>
+  <input
+    autocomplete="name"
+    class="intro__input"
+    id="guestName"
+    inputmode="text"
+    placeholder="Например: Константин"
+    type="text"
+  />
+  <div aria-live="polite" class="intro__note" id="nameNote"></div>
+  <div aria-live="polite" class="intro__error" id="nameError" role="alert"></div>
+</div>
+
+<button class="intro__btn" id="openInvite" type="button" disabled>
+        Открыть приглашение
+      </button>
+<div class="intro__hint">Прокрутите вниз, чтобы увидеть детали</div>
+</div>
+</div>
+<!-- зерно сверху всей страницы -->
+<div aria-hidden="true" class="grain"></div>
+<main class="page">
+<!-- HERO -->
+<section class="welcome section reveal" data-anim="fade-up">
+<h2 class="h2 split-lines"><span class="line">Дорогие гости!</span></h2>
+<p class="welcome-text split-lines">
+<span class="line">Совсем скоро состоится наша свадьба!</span>
+<span class="line"></span>
+</p>
+</section>
+
+<section id="funStampSection" class="stamp-section section reveal" data-anim="pop">
+  <div class="fun-stamp">ты сначала бур верни</div>
+</section>
+
+
+
+<section class="personal-invite section reveal" data-anim="fade-up">
+  <div class="personal-card">
+    <div class="personal-ornament personal-ornament--top" aria-hidden="true"></div>
+    <div class="personal-sign">
+      <span class="js-guest-name">...</span>
+    </div>
+    <div class="personal-divider" aria-hidden="true"></div>
+    <div class="personal-body">
+      Приглашаем вас разделить с&nbsp;нами радость дня нашей свадьбы. Будем рады видеть вас среди самых близких и&nbsp;дорогих нам людей.
+    </div>
+    <div class="personal-divider personal-divider--bottom" aria-hidden="true"></div>
+    <div class="personal-ornament personal-ornament--bottom" aria-hidden="true"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="hero section reveal" data-anim="fade-up">
+<div aria-hidden="true" class="hero-lines">
+<span class="vline"></span>
+<span class="vline vline2"></span>
+</div>
+<h1 class="names split-lines">
+<span class="line">Юлия</span>
+<span class="line amp">&amp;</span>
+<span class="line">Владимир</span>
+</h1>
+
+<p class="date split-lines">
+<span class="line">01 августа 2026</span>
+</p>
+</section>
+
+<!-- portraits -->
+<section class="love-photos section reveal" data-anim="photos">
+<div class="love-stack">
+<div class="love-row">
+<figure class="polaroid polaroid--top">
+<div class="polaroid__mat">
+<img alt="Юлия" class="photo-julia" src="images/julia.png"/>
+</div>
+<figcaption>Юлия</figcaption>
+</figure>
+<div aria-label="Шприц" class="side-emoji side-emoji--syringe js-syringe"><img alt="Шприц" class="syringe-img" src="images/syringe.png"/><span aria-hidden="true" class="syringe-drop"></span></div>
+</div>
+<div aria-label="В плюс Ю равно сердце" class="formula">
+<span class="initial">В</span>
+<span class="op">+</span>
+<span class="initial">Ю</span>
+<span class="op">=</span>
+<span aria-hidden="true" class="heart">❤️</span>
+</div>
+<div class="love-row love-row--bottom">
+<figure class="polaroid polaroid--bottom">
+<div class="polaroid__mat">
+<img alt="Владимир" class="photo-vladimir" src="images/vladimir.png"/>
+</div>
+<figcaption>Владимир</figcaption>
+</figure>
+<div aria-label="Машина" class="side-emoji side-emoji--car js-car"><img alt="Машина" class="car-img" src="images/car.png"/><span aria-hidden="true" class="car-headlights"></span><span aria-hidden="true" class="car-smoke car-smoke--1"></span><span aria-hidden="true" class="car-smoke car-smoke--2"></span><span aria-hidden="true" class="car-smoke car-smoke--3"></span></div>
+</div>
+</div>
+<p class="after-photos split-lines">
+<span class="line">Да, это действительно мы! Как незаметно пролетели годы...</span>
+<span class="line">Мы выросли, и теперь готовы сделать самый важный шаг в нашей жизни — создать семью!</span>
+<span class="line">От всего сердца приглашаем вас стать свидетелями начала нашей семейной истории и разделить с нами радость этого особенного дня!</span>
+</p>
+</section><section class="calendar-section section reveal" data-anim="pop"><h2 class="h2 split-lines"><span class="line">Календарь</span></h2><div aria-label="Календарь: август, 1 августа выделено" class="calendar">
+<div class="calendar__header">АВГУСТ</div>
+<div aria-hidden="true" class="calendar__weekdays">
+<div>пн</div><div>вт</div><div>ср</div><div>чт</div><div>пт</div><div>сб</div><div>вс</div>
+</div>
+<div class="calendar__days">
+<div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+<div class="day is-marked"><span>1</span></div>
+<div class="day"><span>2</span></div>
+<div class="day"><span>3</span></div>
+<div class="day"><span>4</span></div>
+<div class="day"><span>5</span></div>
+<div class="day"><span>6</span></div>
+<div class="day"><span>7</span></div>
+<div class="day"><span>8</span></div>
+<div class="day"><span>9</span></div>
+<div class="day"><span>10</span></div>
+<div class="day"><span>11</span></div>
+<div class="day"><span>12</span></div>
+<div class="day"><span>13</span></div>
+<div class="day"><span>14</span></div>
+<div class="day"><span>15</span></div>
+<div class="day"><span>16</span></div>
+<div class="day"><span>17</span></div>
+<div class="day"><span>18</span></div>
+<div class="day"><span>19</span></div>
+<div class="day"><span>20</span></div>
+<div class="day"><span>21</span></div>
+<div class="day"><span>22</span></div>
+<div class="day"><span>23</span></div>
+<div class="day"><span>24</span></div>
+<div class="day"><span>25</span></div>
+<div class="day"><span>26</span></div>
+<div class="day"><span>27</span></div>
+<div class="day"><span>28</span></div>
+<div class="day"><span>29</span></div>
+<div class="day"><span>30</span></div>
+<div class="day"><span>31</span></div>
+</div>
+</div></section>
+
+<!-- Countdown -->
+<section class="countdown-section section reveal" data-anim="pop">
+<h2 class="h2 split-lines"><span class="line">До свадьбы осталось</span></h2>
+<div class="countdown" id="weddingCountdown" aria-label="Обратный отсчёт до свадьбы">
+  <div class="countdown__item">
+    <span class="countdown__number" id="cdDays">000</span>
+    <span class="countdown__label">дней</span>
+  </div>
+  <div class="countdown__sep">:</div>
+  <div class="countdown__item">
+    <span class="countdown__number" id="cdHours">00</span>
+    <span class="countdown__label">часов</span>
+  </div>
+  <div class="countdown__sep">:</div>
+  <div class="countdown__item">
+    <span class="countdown__number" id="cdMinutes">00</span>
+    <span class="countdown__label">минут</span>
+  </div>
+  <div class="countdown__sep">:</div>
+  <div class="countdown__item">
+    <span class="countdown__number" id="cdSeconds">00</span>
+    <span class="countdown__label">секунд</span>
+  </div>
+</div>
+</section>
+
+<!-- divider -->
+<section aria-hidden="true" class="divider section reveal">
+<svg preserveaspectratio="none" viewbox="0 0 520 2">
+<path d="M0 1 H520"></path>
+</svg>
+</section>
+<!-- Text block -->
+<section class="info section reveal" data-anim="fade-up">
+<p class="lead split-lines">
+<span class="line">Готовьте наряды и хорошее настроение — мы женимся!</span>
+<span class="line">Очень хотим видеть вас на нашей вечеринке.</span>
+</p>
+</section>
+<!-- divider -->
+<section aria-hidden="true" class="divider section reveal">
+<svg preserveaspectratio="none" viewbox="0 0 520 2">
+<path d="M0 1 H520"></path>
+</svg>
+</section>
+<!-- Location -->
+<section class="schedule section reveal" data-anim="stagger">
+<h2 class="h2 split-lines"><span class="line">Расписание</span></h2>
+<div class="schedule-list">
+<div class="schedule-item"><span class="time">12:30</span><span class="event">Сбор</span></div>
+<div class="schedule-item"><span class="time">13:00</span><span class="event">Регистрация</span></div>
+<div class="schedule-item"><span class="time">15:30</span><span class="event">Встреча жениха и невесты</span></div>
+</div>
+</section>
+<section class="info section reveal" data-anim="fade-up">
+<h2 class="h2 split-lines">
+<span class="line">Место регистрации</span>
+</h2>
+<p class="p split-lines">
+<span class="line">ЗАГС Верх-Исетского района</span>
+<span class="line">Екатеринбург</span>
+</p>
+<a class="link" href="https://yandex.ru/maps/org/otdel_zags_verkh_isetskogo_rayona_g_yekaterinburga/1085246327/?ll=60.531988%2C56.828660&amp;z=17" rel="noreferrer" target="_blank">
+        Открыть карту
+      </a>
+</section>
+
+<section class="info section reveal" data-anim="fade-up">
+<h2 class="h2 split-lines">
+<span class="line">Место празднования</span>
+</h2>
+<p class="p split-lines">
+<span class="line">ул. Чемпионов, 13А/1-2-3</span>
+<span class="line">Екатеринбург</span>
+</p>
+<a class="link" href="https://yandex.ru/maps/54/yekaterinburg/house/ulitsa_chempionov_13a_123/YkkYcwNnSEMHQFtsfXt0dH5nYQ==/?ll=60.547456%2C56.755421&amp;z=19.15" rel="noreferrer" target="_blank">
+        Открыть карту
+      </a>
+</section>
+
+<!-- divider -->
+<section aria-hidden="true" class="divider section reveal">
+<svg preserveaspectratio="none" viewbox="0 0 520 2">
+<path d="M0 1 H520"></path>
+</svg>
+</section>
+<!-- Fish photo -->
+<section class="gifts section reveal" data-anim="pop">
+<h2 class="h2 split-lines"><span class="line">Подарки</span></h2>
+<p class="gift-text split-lines">
+<span class="line">Предлагаем Вам не обременять себя поиском подарка, а предоставить это замечательное право нам, внеся свой вклад в бюджет нашей семьи.</span>
+<span class="line">Будем признательны, если вместо цветов вы подарите нам свои теплые пожелания — они останутся с нами навсегда!</span>
+</p>
+</section>
+
+<div class="section__divider gifts-divider-injected"></div>
+<section class="rsvp section reveal" data-anim="fade-up">
+  <h2 class="h2 split-lines"><span class="line">Подтверждение присутствия</span></h2>
+  <p class="p split-lines">
+    <span class="line">Пожалуйста, сообщите нам, сможете ли вы быть с нами.</span>
+    <span class="line">Будем рады узнать о вашем решении до 1 июня.</span>
+  </p>
+
+  <form class="rsvp-form" id="rsvpForm">
+    <div class="rsvp-options" role="radiogroup" aria-label="Выбор присутствия">
+      <label class="rsvp-option">
+        <input checked name="attendance" type="radio" value="yes" />
+        <span>Да, приду</span>
+      </label>
+      <label class="rsvp-option">
+        <input name="attendance" type="radio" value="no" />
+        <span>К сожалению, не смогу</span>
+      </label>
+    </div>
+
+    <label class="rsvp-label" for="rsvpComment">Комментарий (по желанию)</label>
+    <textarea
+      class="rsvp-textarea"
+      id="rsvpComment"
+      placeholder="Например: есть аллергии / буду чуть позже"
+      rows="4"
+    ></textarea>
+
+    <button class="btn rsvp-btn" type="submit">Отправить</button>
+    <div aria-live="polite" class="rsvp-note" id="rsvpNote"></div>
+  </form>
+</section>
+
+<footer class="footer section reveal" data-anim="fade-up">
+<p class="footer-text split-lines">
+<span class="line">С любовью,</span>
+<span class="line">Юлия и Владимир</span>
+</p>
+</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
